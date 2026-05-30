@@ -124,7 +124,7 @@ void led_init(void) {
     phy_data.led_gpio = phy_data.led_gpio_present ? phy_data.led_gpio : PICO_DEFAULT_WS2812_PIN;
 #elif defined(ESP_PLATFORM)
     #if defined(CONFIG_IDF_TARGET_ESP32S3)
-        #define NEOPIXEL_PIN GPIO_NUM_48
+        #define NEOPIXEL_PIN GPIO_NUM_38
     #elif defined(CONFIG_IDF_TARGET_ESP32S2)
         #define NEOPIXEL_PIN GPIO_NUM_15
     #elif defined(CONFIG_IDF_TARGET_ESP32C6)
